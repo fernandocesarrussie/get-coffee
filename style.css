@@ -23,7 +23,7 @@
 
 }
 .list-menu{
-    width: 15vw;
+    width: 280px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -37,31 +37,46 @@
 .item-menu:hover{
     font-weight: 700;
 }
+.back-img{
+    width: 100vw;
+    overflow: hidden;
+}
 .container-main{
-    height: 75vh;
+    position: relative;
+    width: 100%;
+    height: 730px;
     max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.forma1{
+    position: absolute;
+    width: 61.9%;
+    top: 16%;
+    right: 60.5%;
+    transform: rotate(-5.99deg);
+    z-index: -1;
+    overflow: hidden;
+}
 .box-information{
-    width: 50%;
-    height: 35vh;
+    width: 70%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 .text-information{
-    width: 83%;
+    width: 59%;
     font-size: 2.2rem;
     line-height: 50px;
     font-weight: 700;
 }
 .btn-action{
-    width: 15vw;
-    height: 7vh;
+    width: 280px;
+    height: 65px;
     background-color: #fca60f;
     border: solid #fca60f;
     border-radius: 5px;
@@ -72,7 +87,7 @@
     cursor: pointer;
 }
 .box-social{
-    width: 7vw;
+    width: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,6 +95,182 @@
 .img-social{
     cursor: pointer;
 }
-.logo-main{
-
+.logo-main svg{
+    z-index: 999;
+}
+.forma2{
+    width: 45%;
+    position: absolute;
+    left: 84%;
+    transform: rotate(9.27deg);
+    z-index: -1;
+}
+.footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width: 800px)  {
+    .box-header {
+        max-width: 640px;
+    }
+    .logo-header {
+        width: 24vw;
+    }
+    .list-menu {
+        width: 28vw;
+    }
+    .item-menu {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container-main {
+        max-width: 640px;
+    }
+    .forma1 {
+        width: 85.9%;
+    }
+    .box-information {
+        width: 100%;
+        height: 30vh;
+    }
+    .text-information {
+        width: 96%;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .btn-action {
+        width: 200px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    .logo-copo{
+        width: 22vw;  
+    }
+    .forma2 {
+        width: 100%;
+        left: 65%;
+    }
+}
+@media (max-width: 570px)  {
+    .box-header {
+        max-width: 480px;
+        justify-content: space-around;
+    }
+    .list-menu {
+        width: 35vw;
+    }
+    .item-menu {
+        text-align: center;
+        width: unset;
+    }
+    .container-main {
+        max-width: 480px;
+    }
+    .forma1 {
+        width: 550px;
+        right: 50%;
+    }
+    .text-information {
+        width: 90%;
+        font-size: 1.23rem;
+        line-height: 30px;
+    }
+    .btn-action {
+        width: 32vw;
+        height: 5vh;
+        font-size: 1rem;
+    }
+    .logo-copo {
+        width: 24vw;
+    }
+    .forma2 {
+        width: 550px;
+        left: 65%;
+    }
+}
+@media (max-width: 420px)  {
+    .container-header {
+        display: flex;
+        height: 10vh;
+    }
+    .box-header {
+        max-width: 320px;
+        width: 100vw;
+        height: 7vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo-header {
+        width: 35vw;
+    }
+    .list-menu {
+        width: 36vw;
+    }
+    .item-menu {
+        font-size: 0.9rem;
+    }
+    .container-main {
+        max-width: 320px;
+    }
+    .box-information {
+        position: relative;
+        width: 100%;
+        height: 86vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .text-information {
+        position: relative;
+        bottom: 40px;
+        text-align: center;
+        width: 100%;
+        font-size: 1.23rem;
+    }
+    .btn-action {
+        position: relative;
+        bottom: 100px;
+        width: 57vw;
+        height: 6vh;
+        font-size: 1.2rem;
+    }
+    .box-social {
+        position: relative;
+        top: 100px;
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-main{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 420px)  {
+    .logo-header {
+        width: 48vw;
+    }
+    .list-menu {
+        width: 60vw;
+    }
+    .forma1 {
+        width: 100%;
+        top: 5%;
+        right: 61%;
+    }
+    .image-forma1 {
+        width: 95vw;
+    }
+    .forma2 {
+        width: 550px;
+        top: 56%;
+        left: 49%;
+    }
+    .image-forma2{
+        width: 95vw;
+    }
 }
